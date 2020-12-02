@@ -36,6 +36,7 @@
   width: 100vw;
   max-width: 100%;
   background-color: #141922;
+  font-family: 'Montserrat', sans-serif;
 }
 /* end wrapper*/
 
@@ -54,9 +55,8 @@
   height: 100px;
 }
 .logo img{
-  width: 50%;
+  width: 70%;
   padding: 30px 0;
-
 }
 
 .content-sidebar{
@@ -121,14 +121,61 @@
 
 
 
-footer{
-  height: 90px;
-  width: 100%;
-  background-color: #282828;
-}
 
+/* HEADER UPGRADE*/
 .my-header{
   width:calc(100vw - 250px);
   height:100px;
   background-color: #000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.upgrade-button{
+  border: 1px solid white;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+/* end HEADER UPGRADE*/
+
+
+/* MAIN CONTENT*/
+.my-nav{
+  width:calc(100vw - 250px);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-nav div{
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+.my-music{
+  padding: 0px 30px;
+}
+
+.list-song{
+  display: flex;
+  justify-content: space-between;
+}
+
+.copertina{
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/metal_lifting.jpg);
+  background-size: cover;
+}
+
+
+footer{
+  height: 90px;
+  width: 100%;
+  background-color: #282828;
 }
