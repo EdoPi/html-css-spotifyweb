@@ -145,6 +145,7 @@
 /* MAIN CONTENT*/
 .my-main-content{
   overflow-y: auto;
+  width:calc(100vw - 250px);
   height: calc(100% - 90px);
 }
 
@@ -174,6 +175,7 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
+  flex-wrap: wrap;
 }
 .create-jon{
   text-align: center;
