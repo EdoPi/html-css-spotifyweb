@@ -26,6 +26,9 @@
 .text-grey{
   color: #626262;
 }
+.margin-r-30{
+  margin-right: 30px;
+}
 /* end utility class*/
 
 
@@ -172,8 +175,7 @@
 }
 
 .my-music{
-  padding: 0px 15px;
-
+padding-left: 30px;
 }
 
 .title-row{
@@ -181,17 +183,10 @@
   font-size: 20px;
   font-weight: bold;
 }
-.recently-played{
+
+.list-song{
   display: flex;
-  justify-content: space-between;
-  text-align: center;
   flex-wrap: wrap;
-}
-.create-jon{
-  text-align: center;
-}
-.create-jon .song:first-child .container-song{
-  margin-right: 30px;
 }
 
 .title-row-description{
@@ -199,18 +194,53 @@
   font-weight: normal;
   padding-top: 10px;
 }
+.song{
+  width: calc(100%/6 - 30px);
+}
 
 .copertina{
-  width: 250px;
-  height: 250px;
+  position: relative;
+}
+
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.fa-play-circle-o{
+  font-size: 100px;
+  color: white;
+  margin-top: 25%;
+}
+
+.copertina:hover .overlay{
+  display:block;
 }
 
 .copertina img{
-  height: 250px;
+  width: 100%;
+
+}
+
+.cover-round{
+  border-radius: 100%;
+}
+
+.text-song{
+  text-align: center;
 }
 
 .title-song{
-  width: 250px;
+  width: 100%;
   padding: 15px 0;
 }
 
