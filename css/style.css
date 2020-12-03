@@ -38,6 +38,11 @@
   background-color: #141922;
   font-family: 'Montserrat', sans-serif;
 }
+
+.main-wrapper{
+  width: 100%;
+  height: calc(100% - 90px);
+}
 /* end wrapper*/
 
 
@@ -124,11 +129,12 @@
 .my-header{
   width:calc(100vw - 250px);
   height:100px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding-right: 30px;
+  position: fixed;
 }
 
 .upgrade-button{
@@ -137,16 +143,18 @@
   padding: 10px 15px;
   border-radius: 20px;
   font-size: 12px;
-  position: fixed;
+
 }
 /* end HEADER UPGRADE*/
 
 
 /* MAIN CONTENT*/
 .my-main-content{
-  overflow-y: auto;
+
   width:calc(100vw - 250px);
-  height: calc(100% - 90px);
+  height: 100%;
+  overflow-y: auto;
+
 }
 
 .my-nav{
@@ -155,6 +163,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 
 .my-nav div{
@@ -164,6 +173,7 @@
 
 .my-music{
   padding: 0px 15px;
+
 }
 
 .title-row{
