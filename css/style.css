@@ -224,6 +224,7 @@ padding-left: 30px;
 
 .copertina{
   position: relative;
+
 }
 
 
@@ -243,7 +244,10 @@ padding-left: 30px;
 .fa-play-circle-o{
   font-size: 100px;
   color: white;
-  margin-top: 25%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 .copertina:hover .overlay{
@@ -285,7 +289,9 @@ footer{
 }
 
 
-
+.nascondi-md{
+  display:none;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -296,21 +302,24 @@ footer{
 }
 
 
-
+.nascondi-s{
+  display:none;
+}
 
 
 
 @media screen and (max-width: 576px) {
 
-  .hidden-xs{
+  .nascondi-xs{
     display:none;
   }
-
+  .visibile-xs{
+    display:block;
+  }
   .my-sidebar{
     width: 80px;
-    height: calc(100vh - 90px);
-    background-color: #000;
-    padding: 0 30px;
+    padding: 10px 0 0 0;
+    text-align: center;
   }
 
   .my-header{
@@ -328,4 +337,22 @@ footer{
   .my-nav{
     width:calc(100vw - 80px);
   }
+
+  .sidebar-footer{
+    text-align: center;
+  }
+
+  .sidebar-footer div::first-child img{
+    width: 50px;
+  }
+
+  .my-menu img{
+    width:25px;
+    margin-right:0px;
+  }
+
+  .content-sidebar{
+    height: 100%;
+  }
+
 }
