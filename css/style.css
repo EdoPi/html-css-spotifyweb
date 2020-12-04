@@ -26,6 +26,10 @@
 .text-grey{
   color: #626262;
 }
+
+.txt-center{
+  text-align: center;
+}
 .margin-r-30{
   margin-right: 30px;
 }
@@ -146,6 +150,7 @@
   align-items: center;
   padding-right: 30px;
   position: fixed;
+  z-index: 99;
 }
 
 .upgrade-button{
@@ -241,7 +246,7 @@ padding-left: 30px;
   display: none;
 }
 
-.fa-play-circle-o{
+.my-row .fa-play-circle-o{
   font-size: 100px;
   color: white;
   position: absolute;
@@ -256,6 +261,7 @@ padding-left: 30px;
 
 .copertina img{
   width: 100%;
+  vertical-align: middle;
 
 }
 
@@ -273,10 +279,120 @@ padding-left: 30px;
   padding: 15px 0;
 }
 
+
+/* footer*/
+
+
 footer{
   height: 90px;
   width: 100%;
   background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mini{
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.mini img{
+  width: 50px;
+  height: 50px;
+  margin: 0 10px 0 30px;
+}
+.mini-text{
+  line-height: 16px;
+}
+.mini-text span:nth-child(3){
+  font-size: 12px;
+}
+
+.playbar{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.command{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.command i{
+ padding: 0 10px 10px;
+}
+
+.command i:nth-child(3){
+  font-size: 30px;
+}
+
+.command i:nth-child(3):hover{
+  transform: scale(1.2);
+}
+
+.time-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.elapsed-time{
+  width: 100%;
+  height: 4px;
+  background-color: #505050;
+  margin: 0 10px;
+  border-radius: 4px;
+}
+
+.filler-time{
+  position: relative;
+  height: 4px;
+  background-color: #BABABA;
+  border-radius: 4px;
+}
+
+.fill20{
+  width: 20%
+}
+.fill15{
+  width: 15%
+}
+
+.pointer{
+  position:absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #BABABA;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  right: 0;
+  top: 50%;
+  display: none;
+}
+
+.elapsed-time:hover .filler-time{
+  background-color: #C6F376;
+
+}
+.elapsed-time:hover .pointer{
+  display: block;
+}
+
+.volume{
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.volume i{
+  padding:10px;
 }
 
 /* MEDIA QUERY*/
